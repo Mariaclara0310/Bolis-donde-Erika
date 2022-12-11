@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,66 +8,165 @@
     <title>Protecto Erika</title>
    
      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&family=Lato:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <article class="contenedor01">
-      <h1 align="center">Bolis Donde Erika</h1>
-    <h2> Ven y disfruta del mejor sabor!</h2>
-    
-    <img src="/image/canasta.jpg" alt="">
-
-    <h2 align="center"> Tenemos gran variedad de sabores</h2> 
-    <p class="parrafo-destacado" align="center"> Cremosos en Leche y Citricos en Agua </p> 
-
-    <ol>
-        <h4>Cremosos</h4>
-        <br>
-        <div class="items">
-             <ul>
-            <li>Coco</li>
-            <li>Chocolate</li>
-            <li>Oreo</li>
-            <li>Guanabana</li>
-            <li>Chicle</li>
-            <li>Mani</li>
-            <li>Galleta</li>
-            <li>Fresa con Crema</li>
-            <li>Bocadillo con Crema</li>
-        </ul>
+    <header id="header" class="header">
+        <div class="container">
+           <div class="row">
+            <div class="four colums">
+            <img src="/image/logo.png" alt=""id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#"id="vaciar-carrito"class="button u-full-width"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <ul class="navct">
+                        <li class="four columns"><a href="#">Inicio</a></li>
+                        <li class="four columns"><a href="#">Sobre</a></li>
+                        <li class="four columns"><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-   
-    </ol>
+        </div>
+    </header>
 
-    <ol>
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six-columns">
+                    <div class="contenido-hero">
+                        <h2>Pide tu Boli Favorito</h2>
+                        <p>Todos los Bolis a $ 1.000</p>
+                        <form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-width" type="text" 
+                            placeholder="Que te gustaria comprar" 
+                            id="buscador">
+                            <input type="submit"id="submit-buscador" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p>20 Variedades de Bolis<br>
+                        Explora los sabores más recientes
+                    </p>
+                </div>
+                <div class="barra">
+                    <div class="container">
+                        <div class="row">
+                            <div class="four columns icono icono2">
+                                <p>Expertos en la Elaboración<br>
+                                    Explora los distintos sabores
+                                </p>
+                            </div>
+                            <div class="barra">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="four columns icono icono3">
+                                            <p>Frutas de calidad<br>
+                                                % Natural
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="lista-bolis" class="container">
+                                <h1 id="encabezado" class="encabezado">Pedidos en Línea</h1>
+                                <div class="row">
+                                    <div class="four columns">
+                                        <div class="card">
+                                            <img src="/image/boli de chocolate.jpg" class="u-full-width">
+                                            <div class="info-card">
+                                                <h4>Boli de Chocolate</h4>
+                                               <span class="material-symbols-outlined">star star star star</span>
+                                                <p class="precio"><span class="u-pull-rigth">$1000</span></p>
+                                            <a href="#" class="u-full-width 
+                                            button-primary 
+                                            button 
+                                            input 
+                                            agregar-carrito">Agregar al Carrito</a>
+                                            </div>
+                                            <div class="card">
+                                                <img src="/image/bolis de coco.jpg" class="u-full-width">
+                                                <div class="info-card">
+                                                    <h4>Boli de Coco</h4>
+                                                    <span class="material-symbols-outlined">star star star star</span>
+                                                    <p class="precio"><span class="u-pull-rigth">$1000</span></p>
+                                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al Carrito</a>
+                                                </div>
+                                                <div class="card">
+                                                    <img src="/image/bolis de chicle.jpg" class="u-full-width">
+                                                    <div class="info-card">
+                                                        <h4>Boli de Chicle</h4>
+                                                        <span class="material-symbols-outlined">star star star star</span>
+                                                        <p class="precio"><span class="u-pull-rigth">$1000</span></p>
+                                                    <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al Carrito</a>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="/image/bolis de ron con pasas.jpg" class="u-full-width">
+                                                        <div class="info-card">
+                                                            <h4>Boli de Ron con Pasas</h4>
+                                                            <span class="material-symbols-outlined">star star star star</span>
+                                                            <p class="precio"><span class="u-pull-rigth">$1000</span></p>
+                                                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al Carrito</a>
+                                                        </div>
+                                                        <div class="card">
+                                                            <img src="/image/bolis de oreo.jpg" class="u-full-width">
+                                                            <div class="info-card">
+                                                                <h4>Boli de Oreo</h4>
+                                                                <span class="material-symbols-outlined">star star star star</span>
+                                                                <p class="precio"><span class="u-pull-rigth">$1000</span></p>
+                                                            <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al Carrito</a>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
     
-         <h4> Citricos</h4>
-         <br> 
-         <div class="lista" d-flex>
-          <ul>
-            <li>Maracuya</li>
-            <li>Corozo</li>
-            <li>Tamarindo</li>
-            <li>Limon</li>
-       
-      </ul>   
-         </div>
+              
+            
         
-    </ol>
-    </ol>  
-
-    </article>
-    <article class="contenedor02">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum molestiae, expedita veniam natus autem delectus error officiis sequi magnam impedit repellendus ad iste quo vitae culpa voluptatum officia nisi.</p>
-
-    </article>
-
-    
-
-     
-   
+      <!-- <div class="box_copyright">
+        <hr>
+       <p align="center">Todos los derechos reservados © 2022
+        <b>Bolis Donde Erika</b></p>
+    </div> -->
 </body>
 
 </html>

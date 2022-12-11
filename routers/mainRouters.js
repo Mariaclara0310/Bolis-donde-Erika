@@ -5,8 +5,12 @@ const mainController = require('../controllers/mainController');
 
 router.get('/', mainController.index);
 
-router.get('/registro', mainController.register);
+router.get('/registro', mainController.registro);
 
-router.get('login', mainController.login);
+router.get('/login', mainController.login);
+
+router.get('/listado', mainController.listado);
+
+router.get('/search', mainController.search);
 
 module.exports = router;
