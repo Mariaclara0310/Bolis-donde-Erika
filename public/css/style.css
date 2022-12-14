@@ -248,7 +248,7 @@ input[type="button"].button-primary:focus {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 50vh;
+  width: 45vh;
   align-items: center;
   margin: auto;
   margin-top: 20px;
@@ -276,18 +276,18 @@ input[type="button"].button-primary:focus {
 .card-title {
   margin-bottom: 20px;
   text-align: center;
-  color: #7a7a7a;
+  color: white;
 }
 
 .card-precio {
   margin-bottom: 20px;
   text-align: center;
-  color: #7a7a7a;
+  color: white;
   font-weight: bold;
 }
 .card-detalle {
   margin-bottom: 20px;
-  color: #7a7a7a;
+  color: white;
   text-align: center;
   font-weight: bold;
   height: 60px;
@@ -321,17 +321,17 @@ footer{
   max-width: 350px;
   margin-top: 20px;
   font-weight: 500;
-  color: #7a7a7a;
+  color: white;
   font-size: 18px;
 }
 .box_footer h2{
   margin-bottom: 30px;
-  color: #343434;
+  color: white;
   font-weight: 700;
 }
 .box_footer a{
   margin-top: 10px;
-  color: #7a7a7a;
+  color: white;
   font-weight: 600;
   text-decoration: none;
 }
@@ -350,11 +350,11 @@ footer{
 }
 .box_copyright p{
   margin-top: 20px;
-  color: #7a7a7a;
+  color: white;
  
 }
 .box_copyright hr{
   border: none;
   height: 1px;
-  background-color: #7a7a7a;
+  background-color: white;
 }
