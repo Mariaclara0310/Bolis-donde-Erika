@@ -21,7 +21,9 @@ header {
   padding: 20px 0 0 0;
   text-align: center;
   align-items: center;
+  border: #8a0757;
   background-color: #ee71be;
+  
 }
 
 .navct {
@@ -70,9 +72,10 @@ ul {
   z-index: -1;
 }
 
-#encabezado {
-  margin: 30px 0;
-}
+/* #encabezado {
+  margin: 5px ;
+  text-align: center;
+} */
 
 .submenu {
   position: relative;
@@ -134,29 +137,18 @@ ul {
   border: none;
 }
 
-.barra {
-  padding: 10px;
-  background: #8a0757;
-
-}
-
-/* .barra p {
-  
+.barra-container p{
+  padding: 5px;
+  background: #8a0757; 
   color: white;
   display: flex;
- 
- 
-} */
-
-
-.icono {
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 60px;
-  background-size: 30px;
-  margin-bottom: 40px;
+  flex-direction: column;
   text-align: center;
-}
+  
+  }
+   .icono {
+  
+   }
 
 @media (min-width: 750px) {
   .icono {
@@ -176,9 +168,11 @@ ul {
   background-image: url();
 }
 
- #lista-bolis .row{
-  margin-bottom: 20px;
-} 
+  #lista-bolis {
+  margin-bottom: 10px;
+  text-align: center; 
+  background: #8a0757;
+  } 
 
  .agregar-carrito {
   margin: 10px 0;
@@ -247,11 +241,12 @@ input[type="button"].button-primary:focus {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  width: 45vh;
+  padding: 5px;
+  width: 46vh;
   align-items: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* .h1Catalogo {
@@ -260,21 +255,23 @@ input[type="button"].button-primary:focus {
   margin: 20px;
 } */
 
-.card-container {
+.card-container{
   display: flex;
   flex-wrap: wrap;
+  background: #8a0757;
+  text-align: center;
 
 }
 
 .card-img {
   margin-bottom: 50px;
-  width: 55vh;
+  width: 60vh;
   height: 50vh;
   object-fit: cover;
 }
 
 .card-title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
   color: white;
 }
@@ -296,6 +293,7 @@ input[type="button"].button-primary:focus {
 footer{
   width: 100%;
   padding: 20px 0px;
+  background: #8a0757;
   background-image: url(/image/logo11-removebg-preview.png);
   background-repeat: no-repeat;
   justify-content: space-around;
@@ -312,14 +310,12 @@ footer{
   display: flex;
   flex-direction: column;
   padding: 40px;
-  margin-top: 80px;
+  margin-top: 10px;
 }
-.box_footer .logo img{
-  width: 180px;
-}
+
 .box_footer .terms{
   max-width: 350px;
-  margin-top: 20px;
+  margin-top: 25px;
   font-weight: 500;
   color: white;
   font-size: 18px;
