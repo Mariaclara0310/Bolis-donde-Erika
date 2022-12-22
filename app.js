@@ -18,5 +18,7 @@ app.listen(3000, () => console.log("Servidor up"));
 
  app.get('/', (req, res) => {
      res.sendFile(path.resolve(__dirname, './views/index.ejs'));
+     
     
  });
+ 

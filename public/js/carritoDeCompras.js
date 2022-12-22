@@ -1,6 +1,6 @@
 const carrito = document.getElementById('carrito');
 const bolis = document.getElementById('lista-boli');
-const listaBolis = document.querySelector('#lista-carrito tbody');
+const listaCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
 cargarEventListeners();
@@ -26,9 +26,9 @@ function leerDatosBoli(boli) {
         precio: boli.querySelector('.precio span').textContent,
         id: boli.querySelector('a').getAttribute('date-id')
     }
-    inserttarCarrito(infoBoli);
+    insertarCarrito(infoBoli);
 }
-function inserttarCarrito(boli){
+function insertarCarrito(boli){
     const row = document.createElement('tr');
     row.innerHTML = `
     <td>
