@@ -109,8 +109,8 @@ function eliminarBoliLocalStorage(boli){
     bolisLS = obtenerBolisLocalStorage();
 
     bolisLS.forEach(function(bolisLS, index){
-        if(cafesLS.id === boli) {
-            cafesLS.splice(index, 1)
+        if(bolisLS.id === boli) {
+            bolisLS.splice(index, 1)
         }
     });
 
